@@ -3,12 +3,14 @@ var numeroUtente = parseInt(prompt("inserisci un numero"));
 var scommessa = prompt(" scegli pari o dispari");
 // Generiamo un numero random (sempre da 1
 // a 5) per il computer.
-numeroPc =getRandomIntInclusive(1,5);
-
+// numeroPc =getRandomIntInclusive(1,5);
+var numeroPc =4
 // Sommiamo i due numeri e dichiariamo chi ha
 // vinto (controlliamo se la somma da pari o dispari).
 var totale = isEven(numeroUtente + numeroPc);
-console.log(totale);
+if (totale == true && scommessa == "pari") {
+    console.log("nino");
+}
 // funzioni da utilizzare
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
