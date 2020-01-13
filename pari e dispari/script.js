@@ -1,6 +1,9 @@
 // L’utente sceglie pari o dispari e un numero da 1 a 5.
 var numeroUtente = parseInt(prompt("inserisci un numero"));
 var scommessa = prompt(" scegli pari o dispari");
+while (scommessa != "pari" && scommessa != "dispari") {
+    scommessa = prompt(" scegli pari o dispari");
+}
 // Generiamo un numero random (sempre da 1
 // a 5) per il computer.
 // numeroPc =getRandomIntInclusive(1,5);
