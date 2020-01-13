@@ -3,6 +3,9 @@ var parola = prompt("inserisci una parola")
 var listaParola = [];
 var listaParolaDaCapovolgere = [];
 var conteggio=0;
+while (isNaN(parola) == false) {
+   parola = prompt("inserisci una parola")
+}
 for (var i = 0; i < parola.length; i++) {
   listaParola.push(parola[i])
 }
