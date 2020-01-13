@@ -1,13 +1,17 @@
 // L’utente sceglie pari o dispari e un numero da 1 a 5.
 var numeroUtente = parseInt(prompt("inserisci un numero"));
 var scommessa = prompt(" scegli pari o dispari");
+console.log(isNaN(numeroUtente));
+while (isNaN(numeroUtente) == true) {
+  numeroUtente = parseInt(prompt("inserisci un numero"));
+}
 while (scommessa != "pari" && scommessa != "dispari") {
     scommessa = prompt(" scegli pari o dispari");
 }
 // Generiamo un numero random (sempre da 1
 // a 5) per il computer.
-// numeroPc =getRandomIntInclusive(1,5);
-var numeroPc =4
+numeroPc =getRandomIntInclusive(1,5);
+
 // Sommiamo i due numeri e dichiariamo chi ha
 // vinto (controlliamo se la somma da pari o dispari).
 var totale = isEven(numeroUtente + numeroPc);
@@ -23,7 +27,7 @@ else if (totale == false && scommessa == "pari") {
 else {
   alert( "hai vinto");
 }
-console.log(totale);
+
 // funzioni da utilizzare
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
