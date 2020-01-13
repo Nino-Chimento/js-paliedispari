@@ -9,11 +9,18 @@ var numeroPc =4
 // vinto (controlliamo se la somma da pari o dispari).
 var totale = isEven(numeroUtente + numeroPc);
 if (totale == true && scommessa == "pari") {
-    console.log("nino");
+    alert("hai vinto");
 }
 else if (totale == true && scommessa == "dispari") {
-  console.log("hai perso");
+  alert("hai scelto dispari ed e'scuto pari");
 }
+else if (totale == false && scommessa == "pari") {
+  alert("hai scelto pari ed e'uscito dispari");
+}
+else {
+  alert( "hai vinto");
+}
+console.log(totale);
 // funzioni da utilizzare
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
