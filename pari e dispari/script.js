@@ -11,6 +11,9 @@ var totale = isEven(numeroUtente + numeroPc);
 if (totale == true && scommessa == "pari") {
     console.log("nino");
 }
+else if (totale == true && scommessa == "dispari") {
+  console.log("hai perso");
+}
 // funzioni da utilizzare
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
