@@ -1,5 +1,5 @@
 
-var parola = "ovattavb";
+var parola = prompt("inserisci una parola")
 var listaParola = [];
 var listaParolaDaCapovolgere = [];
 var conteggio=0;
